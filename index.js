@@ -25,6 +25,10 @@ let notes = [
   },
 ]
 
+app.get('/', (req, res) => {
+  res.send('Server is running!')
+})
+
 app.get('/api/notes', (request, response) => {
   response.json(notes)
 })
